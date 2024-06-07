@@ -1,14 +1,31 @@
 
 body{
   position: relative;
-    text-align: center;
     background: rgb(255, 0, 0);
     background-image: url("./squiggel.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+.wrapper{
+  text-align: center;
+  margin-left:7%;
+  margin-right:7%;
+  position:absolute;
+  margin-top: 5%;
+}
 
-.button {
+h2.projectHeader{
+  text-align: left;
+}
+
+.boneSpace{
+  height: 200px;
+}
+/*.button {
     --offset: 10px;
     --border-size: 2px;
     
@@ -31,5 +48,25 @@ body{
     &:hover {
       background: rgba(100, 0, 0, .03);
     }
-    
+  }*/
+
+  .button{
+    background-color: transparent;
+    border-width: 3px;
+    border-radius: 12px;
+    border-color: rgb(53, 53, 53);
+    color: rgb(45, 45, 45);
+    padding: 15px;
+    width: 210px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 4px;
+    cursor: pointer;
+    transition: background .8s ease;
+  }
+
+  .button:hover{
+    background: rgba(100, 0, 0, .5);
   }
