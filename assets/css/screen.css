@@ -3,10 +3,12 @@ body{
   /*position: relative;*/
   background: rgb(255, 104, 164);
   
-  background-image: url("./squiggel.svg");
+  background-image: url("../img/squiggel.svg");
   background-repeat: no-repeat;
   background-size:cover;
   align-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -55,4 +57,45 @@ h2.projectHeader{
 
 .button:hover{
     background: rgba(100, 0, 0, .5);
+}
+
+/* Container for the button and menu */
+.menu-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* menu button */
+.menu-button {
+  background-color: rgba(248, 238, 238, 80);
+  border-width: 3px;
+  border-radius: 12px;
+  border-color: rgb(53, 53, 53);
+  color: rgb(25, 21, 100);
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* menu */
+.menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* menu items */
+.menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.menu a:hover {
+  background-color: #f1f1f1;
 }
