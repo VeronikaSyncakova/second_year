@@ -12,17 +12,46 @@
 </head>
 
 <body>
-    <div class="wrapper">
+        <div class="menu-container">
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+            <div class="menu" id="popupMenu">
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </div>
+        </div>
         <h1>Veronika Syncakova</h1>
-        <h2>veva.syncakova@gmail.com | 
-        <a href="https://www.linkedin.com/in/veronika-syncakova-0138bb2a0/">linkdin</a> |
-        <a href="https://github.com/VeronikaSyncakova">github</a></h2>
-        <h2>2nd year work</h2>
-        <a href="home.html">
-            <button class="button" type="button">Play</button>
-        </a>
-    </div>
+        <h3>veva.syncakova@gmail.com | 
+            <a href="https://www.linkedin.com/in/veronika-syncakova-0138bb2a0/">linkedin</a> |
+            <a href="https://github.com/VeronikaSyncakova">github</a></h3>
+        <div class="wrapper">
+            <section id="about">
+                <h2>About</h2>
+                <p>Hi! <br>I am Computer Games Development student at SETU Carlow in Ireland.<br>
+                Below you can see some of my work I did during my second year and a website with my first year work.</p>
+            </section>
+            <section id="projects">
+                <h2>Games&Projects</h2><br>
+                <button class="button" onclick="location.href='forgNight.html'">Forgotten night</button>
+                <button class="button" onclick="location.href='coffeCup.html'">Star bean</button>
+                <button class="button" onclick="location.href='blindWatchers.html'">Blind watchers</button>
+                <button class="button" onclick="location.href='calculator.html'">Assembly UI calculator</button>
+                <h2>Small projects</h2>
+                <!--<button class="button" onclick="location.href='openGL.html'">OpenGL</button> !-->
+                <button class="button" onclick="location.href='https://globalgamejam.org/games/2024/minor-miners-8'">Global Game Jam</button>
+                <button class="button" onclick="location.href='tanks.html'">Tanks</button>
+                <!--<button class="button" onclick="location.href='levelEditor.html'">Stop-motion platformer</button> !-->
+                <h2>Previous year</h2>
+                <button class="button" onclick="location.href='https://veronikasyncakova.github.io/first_year/'">1st year</button>
+            </section>
+        </div>
 
-    <script type="text/javascript" src="assets/js/init.js"></script>  
-
+        <section id="contact">
+            <h2>Contact details</h2>
+            <p><img src="assets/img/envelope.svg" width="40px">  veva.syncakova@gmail.com
+            <br><a href="https://www.linkedin.com/in/veronika-syncakova-0138bb2a0/"><img src="assets/img/github.svg" width="40px">  VeronikaSyncakova</a> 
+            <br><a href="https://github.com/VeronikaSyncakova"><img src="assets/img/linkedin.svg" width="40px">  VeronikaSyncakova</a> </p>
+        </section>
+        
+    <script type="text/javascript" src="assets/js/home.js"></script> 
 </body>
