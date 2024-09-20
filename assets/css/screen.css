@@ -67,10 +67,18 @@ h2.projectHeader{
     cursor: pointer;
     transition: background .8s ease;
 }
+#star-bean{
+  background-color: rgb(0, 200,160);
+  transition: background .8s ease;
+}
+#star-bean:hover{
+  background: rgb(97, 93, 176);
+}
 
 .button:hover{
     background: rgb(97, 93, 176);
 }
+
 
 /* Container for the button and menu */
 .menu-container {
